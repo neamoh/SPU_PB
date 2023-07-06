@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title>Device Borrowing and Booking System</title>
+    <link rel="stylesheet" type="text/css" href="pb.css">
+
+
+    <h1><a href ="https://www.spu.ac.ke/"><img src="C:\Users\USER\OneDrive\Desktop\SPU_PB\spu_logo-nobg.png" alt="LOGO"></a></h1>
+    <p><h2>ST.PAUL'S UNIVERSITY</h2>
+        <h3>  Your University Of Choice!</h3></p>
+
+     <h4><p>Borrowing and Booking System</p></h4>     
+</header>
+<body>
+    <form action="http://localhost/spu/spu.php" method="POST" >
+        <h5>Borrow a Device</h5>
+        <label for="staff_name">Staff Name:</label>
+        <input type="text" id="staff_name" name="staff_name" required>
+
+        <label for="spu_number">SPU Number:</label>
+        <input type="text" id="spu_number" name="spu_number" required>
+
+        <label for="staff_email">Staff Email:</label>
+        <input type="email" id="staff_email" name="staff_email" required>
+
+        <label for="device_name">Device Name:</label>
+        <input type="text" id="device_name" name="device_name" required>
+
+        <label for="borrow_date">Borrow Date:</label>
+        <input type="date" id="borrow_date" name="borrow_date" required>
+
+        <label for="retun_date">Return Date:</label>
+        <input type="date" id="return_date" name="return_date" required>
+
+        <input type="submit" name="submit" value="Submit">
+    </form>
+
+    <form action="C:\xampp\htdocs\spu\spu_book.php" method="POST">
+        <h4>Book a Projector</h4>
+        <label for="staff_name">Staff Name:</label>
+        <input type="text" id="staff_name" name="staff_name" required>
+
+        <label for="spu_number">SPU Number:</label>
+        <input type="text" id="spu_number" name="spu_number" required>
+
+        <label for="staff_email">Staff Email:</label>
+        <input type="email" id="staff_email" name="staff_email" required>
+
+        <label for="booking_date">Booking Date:</label>
+        <input type="date" id="booking_date" name="booking_date" required>
+
+        <input type="submit" value="Submit">
+    </form>
+    <footer>
+       <h6>Copyright 2023 St.Paul's University</h6> 
+    </footer>
+</body>
+</html>
